@@ -6,62 +6,60 @@
   <title>Griselda Ríos – Candidata a Intendente de Corrientes</title>
   <meta name="description" content="Sitio oficial de la campaña de Griselda Ríos, candidata a Intendente de la Ciudad de Corrientes." />
   <style>
-    :root { 
-      --max: 980px; 
-      --bg:#ff6600; /* Fondo naranja */
-      --fg:#222; 
-      --muted:#444; 
-      --brand:#0d6efd; 
+    :root{
+      --max:980px;
+      --bg:#ff6600;
+      --fg:#222;
+      --muted:#444;
+      --brand:#0d6efd;
     }
-    * { box-sizing: border-box; }
-    body { 
-      margin:0; 
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; 
-      color:var(--fg); 
-      background:var(--bg); 
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+      color:var(--fg);
+      background:var(--bg);
     }
-    header { background:#fff; border-bottom:1px solid #eee; }
-    .wrap { max-width:var(--max); margin:0 auto; padding:20px; }
-    .hero { display:grid; grid-template-columns: 120px 1fr; gap:18px; align-items:center; padding:28px 0; }
-    .logo { width:120px; height:120px; border-radius:16px; object-fit:cover; border:1px solid #eee; background:#fff; }
-    h1 { margin:0; font-size:28px; }
-    .tag { color:#fff; background:var(--brand); display:inline-block; padding:6px 10px; border-radius:999px; font-size:14px; }
-    .banner { margin:10px 0 0; max-width:100%; border-radius:12px; border:1px solid #eee; display:block; }
-
-    /* Slogan principal centrado */
-    .slogan-banner {
-      font-family: "Georgia", "Times New Roman", serif;
-      font-size: 40px;
-      font-weight: bold;
-      text-align: center;
-      color: #fff;
-      background: linear-gradient(90deg, #cc5200, #ff6600, #cc5200);
-      padding: 40px 20px;
-      border-radius: 12px;
-      margin: 20px 0;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    header{background:#fff;border-bottom:1px solid #eee}
+    .wrap{max-width:var(--max);margin:0 auto;padding:20px}
+    .hero{display:grid;grid-template-columns:120px 1fr;gap:18px;align-items:center;padding:28px 0}
+    .logo{width:120px;height:120px;border-radius:16px;object-fit:cover;border:1px solid #eee;background:#fff}
+    h1{margin:0;font-size:28px}
+    .tag{color:#fff;background:var(--brand);display:inline-block;padding:6px 10px;border-radius:999px;font-size:14px}
+    .banner{margin:10px 0 0;max-width:100%;border-radius:12px;border:1px solid #eee;display:block}
+    .slogan-banner{
+      font-family:Georgia,"Times New Roman",serif;
+      font-size:40px;
+      font-weight:700;
+      text-align:center;
+      color:#fff;
+      background:linear-gradient(90deg,#cc5200,#ff7a1a,#cc5200);
+      padding:40px 20px;
+      border-radius:12px;
+      margin:20px auto;
+      max-width:var(--max);
+      box-shadow:0 4px 10px rgba(0,0,0,.2);
     }
-
-    main { background:#fff; border:1px solid #eee; border-radius:16px; padding:24px; }
-    .grid { display:grid; grid-template-columns: 1fr 1fr; gap:20px; }
-    .card { border:1px solid #eee; border-radius:12px; padding:16px; }
-    .card h3 { margin:0 0 8px; font-size:18px; }
-    .muted { color:var(--muted); font-size:14px; }
-    footer { color:#fff; font-size:14px; padding:20px 0 40px; text-align:center; }
-    img.responsive { width:100%; height:auto; border-radius:12px; border:1px solid #eee; }
-    @media (max-width:720px){ .hero{grid-template-columns:1fr; text-align:center} .grid{grid-template-columns:1fr} .logo{margin:0 auto;} .slogan-banner{font-size:26px; padding:20px;}}
-    a.btn { 
-      text-decoration:none; 
-      background:var(--brand); 
-      color:#fff; 
-      padding:10px 14px; 
-      border-radius:10px; 
-      display:inline-block; 
-      margin-top:8px; 
+    main{background:#fff;border:1px solid #eee;border-radius:16px;padding:24px}
+    .grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+    .card{border:1px solid #eee;border-radius:12px;padding:16px}
+    .card h3{margin:0 0 8px;font-size:18px}
+    .muted{color:var(--muted);font-size:14px}
+    footer{color:#fff;font-size:14px;padding:20px 0 40px;text-align:center}
+    a.btn{
+      text-decoration:none;background:var(--brand);color:#fff;
+      padding:10px 14px;border-radius:10px;display:inline-block;margin-top:8px
     }
-    .btn + .btn { margin-left: 8px; }
-    .btn-block { display: block; margin-top:10px; text-align:center; }
-    .section-title { font-size:22px; font-weight:bold; text-align:center; margin:20px 0; color:var(--fg); }
+    .btn + .btn{margin-left:8px}
+    .btn-block{display:block;margin-top:10px;text-align:center}
+    .section-title{font-size:22px;font-weight:700;text-align:center;margin:20px 0;color:var(--fg)}
+    @media (max-width:720px){
+      .hero{grid-template-columns:1fr;text-align:center}
+      .grid{grid-template-columns:1fr}
+      .logo{margin:0 auto}
+      .slogan-banner{font-size:26px;padding:20px}
+    }
   </style>
 </head>
 <body>
@@ -76,10 +74,7 @@
     </div>
   </header>
 
-  <!-- Slogan central -->
-  <div class="slogan-banner">
-    “Soy Griselda Ríos y quiero ser tu intendente...”
-  </div>
+  <div class="slogan-banner">“Soy Griselda Ríos y quiero ser tu intendente...”</div>
 
   <div class="wrap">
     <main>
@@ -87,33 +82,16 @@
         <section class="card">
           <h3>Mensaje</h3>
           <p>Este es el <strong>sitio oficial</strong> de la campaña de <strong>Griselda Ríos</strong>, candidata a Intendente de la Ciudad de Corrientes. Nuestro eje es modernizar el municipio con servicios de calidad, transparencia y cercanía a los barrios.</p>
-          
-          <!-- Botón Conóceme -->
-          <a class="btn btn-block" href="https://curriculum-vitae-griseld-eh3yl1g.gamma.site/" target="_blank" rel="noopener">
-            CONOCEME
-          </a>
 
-          <!-- Título antes de las propuestas -->
-          <div class="section-title">
-            NUESTRAS PROPUESTAS PARA LA CIUDAD DE CORRIENTES
-          </div>
+          <a class="btn btn-block" href="https://curriculum-vitae-griseld-eh3yl1g.gamma.site/" target="_blank" rel="noopener">CONOCEME</a>
 
-          <!-- Botones solicitados -->
-          <a class="btn btn-block" href="https://sistema-integral-de-gest-vfuvypq.gamma.site/" target="_blank" rel="noopener">
-            MUNI24 / Obras y Servicios Públicos / Gestión Inteligente de Residuos
-          </a>
-          <a class="btn btn-block" href="https://sistema-remis-muni24-una-9f4jc8e.gamma.site/" target="_blank" rel="noopener">
-            App REMIS MUNI24
-          </a>
-          <a class="btn btn-block" href="https://transporte-publico-efici-bhiz58w.gamma.site/" target="_blank" rel="noopener">
-            Transporte Público
-          </a>
-          <a class="btn btn-block" href="https://plan-integral-de-salud-m-7577uj7.gamma.site/" target="_blank" rel="noopener">
-            Salud Pública Municipal
-          </a>
-          <a class="btn btn-block" href="https://centro-de-bienestar-anim-3u6yg4s.gamma.site/" target="_blank" rel="noopener">
-            Bienestar Animal
-          </a>
+          <div class="section-title">NUESTRAS PROPUESTAS PARA LA CIUDAD DE CORRIENTES</div>
+
+          <a class="btn btn-block" href="https://sistema-integral-de-gest-vfuvypq.gamma.site/" target="_blank" rel="noopener">MUNI24 / Obras y Servicios Públicos / Gestión Inteligente de Residuos</a>
+          <a class="btn btn-block" href="https://sistema-remis-muni24-una-9f4jc8e.gamma.site/" target="_blank" rel="noopener">App REMIS MUNI24</a>
+          <a class="btn btn-block" href="https://transporte-publico-efici-bhiz58w.gamma.site/" target="_blank" rel="noopener">Transporte Público</a>
+          <a class="btn btn-block" href="https://plan-integral-de-salud-m-7577uj7.gamma.site/" target="_blank" rel="noopener">Salud Pública Municipal</a>
+          <a class="btn btn-block" href="https://centro-de-bienestar-anim-3u6yg4s.gamma.site/" target="_blank" rel="noopener">Bienestar Animal</a>
         </section>
 
         <section class="card">
@@ -122,12 +100,12 @@
             <li>Servicios públicos eficientes y transparentes.</li>
             <li>Plan de limpieza y reciclado con economía circular.</li>
             <li>Descentralización y atención a barrios.</li>
-            <li>Plataforma Integral de comunicación MUNI24 disponible 24/7.</li>
+            <li>Plataforma integral MUNI24 disponible 24/7.</li>
             <li>Beneficios fiscales para PYMES y emprendedores.</li>
             <li>Hospital público municipal veterinario.</li>
-            <li>Sistema de transporte con información en tiempo real.</li>
+            <li>Transporte con información en tiempo real.</li>
             <li>Polideportivo de alto rendimiento para Corrientes.</li>
-            <li>Programas educativos y talleres según demanda.</li>
+            <li>Talleres y programas educativos según demanda.</li>
           </ul>
           <p class="muted">Nuestras propuestas serán auditadas por la ciudadanía durante la gestión.</p>
         </section>
@@ -135,16 +113,16 @@
         <section class="card">
           <h3>Contacto oficial</h3>
           <p><strong>Dirección:</strong> Pasaje Juncal 2261 Corrientes, Corrientes 3400</p>
-          <p><strong>Teléfono:</strong> +54 3794047894  </p>
+          <p><strong>Teléfono:</strong> +54 3794047894</p>
           <p><strong>Email:</strong> <a href="mailto:grise.rios@griseldarios.com.ar">grise.rios@griseldarios.com.ar</a></p>
-          <p class="muted">Estos datos coinciden con los declarados en la Biblioteca de Anuncios de Meta.</p>
+          <p class="muted">Datos coinciden con la Biblioteca de Anuncios de Meta.</p>
         </section>
 
         <section class="card">
           <h3>Redes</h3>
           <p><a href="https://www.facebook.com/griselda.rios.18041/" target="_blank" rel="noopener">Facebook</a></p>
           <p><a href="https://www.instagram.com/griseldarios.oficial" target="_blank" rel="noopener">Instagram</a></p>
-          <p class="muted">Usá los enlaces a perfiles oficiales para seguir todas las novedades de campaña.</p>
+          <p class="muted">Seguí las novedades por los perfiles oficiales.</p>
         </section>
       </div>
     </main>
