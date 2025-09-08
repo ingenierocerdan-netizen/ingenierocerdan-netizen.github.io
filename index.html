@@ -43,6 +43,7 @@
       box-shadow:0 4px 10px rgba(0,0,0,.2);
     }
 
+    /* CTA redes */
     .cta-banner{
       text-align: center;
       background: linear-gradient(90deg, #00aaff, #ffffff, #00aaff);
@@ -59,23 +60,26 @@
       margin-top: 12px;
       display: flex;
       justify-content: center;
-      gap: 16px;
+      gap: 20px;
       flex-wrap: wrap;
     }
     .btn-cta{
       text-decoration: none;
-      padding: 12px 18px;
-      border-radius: 10px;
+      padding: 12px 22px;
+      border-radius: 50px; /* pill */
       font-weight: bold;
       color: #fff;
       font-size: 18px;
+      display: flex;
+      align-items: center;
       transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
+    .btn-cta svg{ flex-shrink: 0; margin-right:8px; }
     .btn-cta.instagram{ background: #E1306C; }
     .btn-cta.facebook{ background: #1877F2; }
     .btn-cta:hover{
-      transform: scale(1.05);
-      box-shadow: 0 5px 12px rgba(0,0,0,0.25);
+      transform: scale(1.08);
+      box-shadow: 0 5px 14px rgba(0,0,0,0.3);
     }
     .arrow-down {
       font-size: 36px;
@@ -88,6 +92,7 @@
       60% { transform: translateY(5px); }
     }
 
+    /* Botón CV */
     .btn-block{display:block;margin:16px 0 0;text-align:left}
     .btn{
       text-decoration:none;
@@ -102,6 +107,7 @@
     }
     .btn:hover{transform: translateY(-2px); box-shadow:0 6px 14px rgba(13,110,253,.28)}
 
+    /* Paneles */
     main{padding:0 20px 40px}
     .panel{
       background:var(--panel);
@@ -119,19 +125,54 @@
     ul.clean{padding-left:18px;margin:10px 0}
     ul.clean li{margin:6px 0}
 
-    /* Alerta destacada */
+    /* Alerta destacada animada */
     .alert-box {
       background: linear-gradient(135deg, #FFD54F, #FFB300);
       color: #222;
-      padding: 16px;
-      border-radius: 12px;
+      padding: 18px;
+      border-radius: 14px;
       font-weight: 600;
       box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-      margin: 14px 0;
+      margin: 16px 0;
       text-align: center;
+      animation: pulse 3s infinite;
     }
     .alert-box strong { color:#000; }
     .alert-box em { color:#5d4037; }
+    .btn-cta.plagio-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      background: #d32f2f;
+      color: #fff;
+      padding: 12px 22px;
+      border-radius: 50px;
+      font-size: 17px;
+      font-weight: bold;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .btn-cta.plagio-btn:hover {
+      transform: scale(1.08);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.35);
+      background: #b71c1c;
+    }
+    @keyframes pulse {
+      0% { box-shadow: 0 0 10px rgba(255,179,0,0.6); }
+      50% { box-shadow: 0 0 25px rgba(255,179,0,1); }
+      100% { box-shadow: 0 0 10px rgba(255,179,0,0.6); }
+    }
+
+    /* Animación fade-in para el cierre */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeInUp 1.5s ease forwards;
+      animation-delay: 0.5s;
+    }
+    @keyframes fadeInUp {
+      to { opacity: 1; transform: translateY(0); }
+    }
   </style>
 </head>
 <body>
@@ -141,6 +182,7 @@
       <div>
         <h1>Griselda Ríos</h1>
         <div class="tag">Ex Candidata a Intendente – Ciudad de Corrientes</div>
+        <!-- Botón CV -->
         <a class="btn btn-block" href="https://curriculum-vitae-griseld-eh3yl1g.gamma.site/" target="_blank" rel="noopener">📄 CONOCEME</a>
       </div>
     </div>
@@ -148,16 +190,26 @@
 
   <div class="slogan-banner">“Soy Griselda Ríos y una Ciudadana de BIEN con Proyectos y Propuestas…”</div>
 
+  <!-- CTA Redes con logos y botones redondos -->
   <div class="cta-banner">
     <p>📢 Conocé todas mis <strong>propuestas de campaña</strong> en mis perfiles:</p>
     <div class="arrow-down">⬇️</div>
     <div class="cta-buttons">
-      <a href="https://www.instagram.com/griseldarios.oficial" target="_blank" rel="noopener" class="btn-cta instagram">📸 Instagram</a>
-      <a href="https://www.facebook.com/griselda.rios.18041/" target="_blank" rel="noopener" class="btn-cta facebook">📘 Facebook</a>
+      <a href="https://www.instagram.com/griseldarios.oficial" target="_blank" rel="noopener" class="btn-cta instagram">
+        <!-- Logo Instagram -->
+        <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" width="22" height="22"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.334 3.608 1.31.975.975 1.247 2.242 1.309 3.608.058 1.266.07 1.645.07 4.849s-.012 3.584-.07 4.849c-.062 1.366-.334 2.633-1.309 3.608-.975.975-2.242 1.247-3.608 1.309-1.266.058-1.645.07-4.85.07s-3.584-.012-4.849-.07c-1.366-.062-2.633-.334-3.608-1.309-.975-.975-1.247-2.242-1.309-3.608C2.175 15.747 2.163 15.368 2.163 12s.012-3.584.07-4.849c.062-1.366.334-2.633 1.309-3.608.975-.975 2.242-1.247 3.608-1.309C8.416 2.175 8.796 2.163 12 2.163zM12 0C8.741 0 8.332.014 7.052.072 5.771.13 4.602.403 3.635 1.37 2.668 2.338 2.396 3.507 2.338 4.788 2.28 6.068 2.266 6.478 2.266 12c0 5.522.014 5.932.072 7.212.058 1.281.33 2.45 1.297 3.417.967.967 2.136 1.239 3.417 1.297C8.332 23.986 8.741 24 12 24s3.668-.014 4.948-.072c1.281-.058 2.45-.33 3.417-1.297.967-.967 1.239-2.136 1.297-3.417.058-1.28.072-1.69.072-7.212 0-5.522-.014-5.932-.072-7.212-.058-1.281-.33-2.45-1.297-3.417C19.398.403 18.229.13 16.948.072 15.668.014 15.259 0 12 0zm0 5.838A6.162 6.162 0 0 0 5.838 12 6.162 6.162 0 0 0 12 18.162 6.162 6.162 0 0 0 18.162 12 6.162 6.162 0 0 0 12 5.838zm0 10.162A3.999 3.999 0 1 1 12 8a3.999 3.999 0 0 1 0 7.999zm6.406-11.845a1.44 1.44 0 1 1-2.881 0 1.44 1.44 0 0 1 2.881 0z"/></svg>
+        Instagram
+      </a>
+      <a href="https://www.facebook.com/griselda.rios.18041/" target="_blank" rel="noopener" class="btn-cta facebook">
+        <!-- Logo Facebook -->
+        <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" width="22" height="22"><path d="M22.675 0H1.325C.593 0 0 .593 0 1.326v21.348C0 23.407.593 24 1.325 24h11.494v-9.294H9.691V11.01h3.128V8.414c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24h-1.918c-1.505 0-1.796.716-1.796 1.764v2.314h3.587l-.467 3.696h-3.12V24h6.116C23.407 24 24 23.407 24 22.674V1.326C24 .593 23.407 0 22.675 0z"/></svg>
+        Facebook
+      </a>
     </div>
   </div>
 
   <main>
+    <!-- Compromiso -->
     <section class="panel">
       <h2>Compromiso</h2>
       <p><strong>Sigo en la actividad política</strong>, con la misma convicción de siempre.</p>
@@ -169,6 +221,7 @@
       <p class="muted">Este mensaje está dirigido especialmente a quienes se sienten desprotegidos: no están solos.</p>
     </section>
 
+    <!-- Propuestas Municipales -->
     <section class="panel">
       <h2>Propuestas para Corrientes</h2>
       <ul class="clean">
@@ -190,21 +243,40 @@
       <p><strong>Seguimos trabajando</strong>: cuento con un equipo técnico que <strong>continúa elaborando propuestas</strong> para la <strong>Ciudad</strong> y la <strong>Provincia de Corrientes</strong>, abiertas a la participación de universidades, emprendedores y organizaciones sociales.</p>
     </section>
 
+    <!-- Propuestas Provinciales + Alerta Plagio con botón -->
     <section class="panel">
       <h2>Propuestas Provinciales</h2>
-      <p>Además de lo municipal, junto a mi equipo hemos desarrollado <strong>propuestas en educación, seguridad y salud a nivel provincial</strong>.  
-      Estas propuestas son fruto de un trabajo técnico serio, con diagnósticos reales y soluciones aplicables.</p>
+      <p>Además de lo municipal, junto a mi equipo hemos desarrollado <strong>propuestas en educación, seguridad y salud a nivel provincial</strong>. Estas propuestas son fruto de un trabajo técnico serio, con diagnósticos reales y soluciones aplicables.</p>
 
       <div class="alert-box">
         ⚠️ <strong>Lamentablemente, fuimos víctimas de plagio.</strong><br>
         <em>Pero lejos de frenarnos, eso demuestra que nuestras ideas son valiosas y necesarias.</em><br>
-        📢 En breve las daremos a conocer en detalle en nuestras redes sociales.
+        📢 Hoy podés ver las <strong>propuestas plagiadas</strong> en detalle desde aquí:
+        <br><br>
+        <a href="https://propuestas-salud-segurid-yw70cfk.gamma.site/" target="_blank" rel="noopener" class="btn-cta plagio-btn">
+          📄 Ver Propuestas Plagiadas
+        </a>
       </div>
 
+      <!-- Mensaje redes progresivo + aclaración con fade-in -->
       <p style="font-weight:700; font-size:18px; text-align:center; color:#0d6efd;">
-        👉 ¡Seguime en Instagram y Facebook para enterarte de primera mano!
+        👉 Vamos a ir dando a conocer estas propuestas en forma <strong>progresiva</strong> a través de nuestras redes sociales.  
+        <br>Seguime en <strong>Instagram</strong> y <strong>Facebook</strong> para enterarte de cada publicación.
       </p>
+
+      <div class="panel fade-in">
+        <p style="font-size:16px; line-height:1.6;">
+          Esta aclaración no tiene la intención de generar conflictos con ningún espacio político, sino de dejar en claro que en un ámbito serio las ideas y propuestas <strong>no deberían ser apropiadas sin reconocer a sus autores</strong>.
+        </p>
+        <p style="font-size:16px; line-height:1.6;">
+          Si las propuestas se implementan para mejorar un sistema deficiente en cada tópico, <strong>no tenemos problema en compartirlas</strong>. Pero es muy distinto <em>presentarlas como propias</em> sin mencionar siquiera a sus verdaderos <strong>autores intelectuales</strong> ni al profesional de larga trayectoria que puso toda su experiencia, liderazgo y conocimiento para confeccionar y armar estas y otras iniciativas, de manera desinteresada.
+        </p>
+        <p style="font-weight:700; font-size:18px; text-align:center; color:#333; margin-top:10px;">
+          💙 Vamos por Corrientes entre todos, pero la <strong>HONESTIDAD</strong> ante todo.
+        </p>
+      </div>
     </section>
   </main>
 </body>
 </html>
+
