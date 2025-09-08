@@ -1,14 +1,13 @@
 <!doctype html>
 <html lang="es">
 <head>
-  <meta charset="utf-12" />
-  <meta name="viewport" content="width=device-width, initial-scale=2" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Griselda Ríos – Una Ciudadana como vos que Sueña con una Nueva Corrientes</title>
   <meta name="description" content="Sitio oficial de la Dra Griselda Ríos, Ex candidata a Intendente de la Ciudad de Corrientes / Empresaria y Asesora de Empresas." />
   <style>
     :root{
       --max:980px;
-      --bg:#ff6600;
       --fg:#222;
       --muted:#444;
       --brand:#0d6efd;
@@ -19,7 +18,7 @@
       margin:0;
       font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
       color:var(--fg);
-      background:var(--bg);
+      background: linear-gradient(to bottom, #00aaff 0%, #ffffff 50%, #00aaff 100%);
     }
     header{background:#fff;border-bottom:1px solid #eee}
     .wrap{max-width:var(--max);margin:0 auto;padding:20px}
@@ -27,38 +26,68 @@
     .logo{width:120px;height:120px;border-radius:16px;object-fit:cover;border:1px solid #eee;background:#fff}
     h1{margin:0;font-size:28px}
     .tag{color:#fff;background:var(--brand);display:inline-block;padding:6px 10px;border-radius:999px;font-size:14px}
-    .banner{margin:10px 0 0;max-width:100%;border-radius:12px;border:1px solid #eee;display:block}
+
     .slogan-banner{
       font-family:Georgia,"Times New Roman",serif;
       font-size:40px;
       font-weight:700;
       text-align:center;
       color:#fff;
-      background:linear-gradient(90deg,#cc5200,#ff7a1a,#cc5200);
+      background:linear-gradient(90deg,#009fe3,#ffffff,#009fe3);
       padding:40px 20px;
       border-radius:12px;
       margin:20px auto;
       max-width:var(--max);
       box-shadow:0 4px 10px rgba(0,0,0,.2);
     }
-    main{background:#fff;border:1px solid #eee;border-radius:16px;padding:24px}
-    .grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
-    .card{border:1px solid #eee;border-radius:12px;padding:16px}
-    .card h3{margin:0 0 8px;font-size:18px}
-    .muted{color:var(--muted);font-size:14px}
-    footer{color:#fff;font-size:14px;padding:20px 0 40px;text-align:center}
-    a.btn{
-      text-decoration:none;background:var(--brand);color:#fff;
-      padding:10px 14px;border-radius:10px;display:inline-block;margin-top:8px
+
+    /* CARTEL CTA */
+    .cta-banner{
+      text-align: center;
+      background: linear-gradient(90deg, #00aaff, #ffffff, #00aaff);
+      color: #222;
+      padding: 30px 20px;
+      border-radius: 16px;
+      margin: 20px auto;
+      max-width: 800px;
+      font-size: 20px;
+      font-weight: 600;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      position: relative;
     }
-    .btn + .btn{margin-left:8px}
-    .btn-block{display:block;margin-top:10px;text-align:center}
-    .section-title{font-size:22px;font-weight:700;text-align:center;margin:20px 0;color:var(--fg)}
-    @media (max-width:720px){
-      .hero{grid-template-columns:1fr;text-align:center}
-      .grid{grid-template-columns:1fr}
-      .logo{margin:0 auto}
-      .slogan-banner{font-size:26px;padding:20px}
+    .cta-buttons{
+      margin-top: 15px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .btn-cta{
+      text-decoration: none;
+      padding: 12px 20px;
+      border-radius: 10px;
+      font-weight: bold;
+      color: #fff;
+      font-size: 18px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .btn-cta.instagram{ background: #E1306C; }
+    .btn-cta.facebook{ background: #1877F2; }
+    .btn-cta:hover{
+      transform: scale(1.05);
+      box-shadow: 0 5px 12px rgba(0,0,0,0.3);
+    }
+
+    /* Flecha animada */
+    .arrow-down {
+      font-size: 40px;
+      margin-top: 15px;
+      animation: bounce 1.5s infinite;
+    }
+    @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+      40% { transform: translateY(10px); }
+      60% { transform: translateY(5px); }
     }
   </style>
 </head>
@@ -69,68 +98,27 @@
       <div>
         <h1>Griselda Ríos</h1>
         <div class="tag">Ex Candidata a Intendente – Ciudad de Corrientes</div>
-        <img class="banner" src="img/foto griselda.jpg" alt="Sueño una Corrientes en LIBERTAD" />
       </div>
     </div>
   </header>
 
   <div class="slogan-banner">“Soy Griselda Ríos y Una Ciudadana de BIEN con Proyectos y Propuestas...”</div>
 
-  <div class="wrap">
-    <main>
-      <div class="grid">
-        <section class="card">
-          <h3>Mensaje</h3>
-          <p>Este es el <strong>sitio oficial</strong> de la Dra <strong>Griselda Ríos</strong>, Ex candidata a Intendente de la Ciudad de Corrientes. Nuestro eje es modernizar el municipio con servicios de calidad, transparencia y cercanía a los barrios.</p>
-
-          <a class="btn btn-block" href="https://curriculum-vitae-griseld-eh3yl1g.gamma.site/" target="_blank" rel="noopener">CONOCEME</a>
-
-          <div class="section-title">NUESTRAS PROPUESTAS PARA LA CIUDAD DE CORRIENTES</div>
-
-          <a class="btn btn-block" href="https://sistema-integral-de-gest-vfuvypq.gamma.site/" target="_blank" rel="noopener">MUNI24 / Obras y Servicios Públicos / Gestión Inteligente de Residuos</a>
-          <a class="btn btn-block" href="https://sistema-remis-muni24-una-9f4jc8e.gamma.site/" target="_blank" rel="noopener">App REMIS MUNI24</a>
-          <a class="btn btn-block" href="https://transporte-publico-efici-bhiz58w.gamma.site/" target="_blank" rel="noopener">Transporte Público</a>
-          <a class="btn btn-block" href="https://plan-integral-de-salud-m-7577uj7.gamma.site/" target="_blank" rel="noopener">Salud Pública Municipal</a>
-          <a class="btn btn-block" href="https://centro-de-bienestar-anim-3u6yg4s.gamma.site/" target="_blank" rel="noopener">Bienestar Animal</a>
-        </section>
-
-        <section class="card">
-          <h3>Resumen de Propuestas</h3>
-          <ul>
-            <li>Servicios públicos eficientes y transparentes.</li>
-            <li>Plan de limpieza y reciclado con economía circular.</li>
-            <li>Descentralización y atención a barrios.</li>
-            <li>Plataforma integral MUNI24 disponible 24/7.</li>
-            <li>Beneficios fiscales para PYMES y emprendedores.</li>
-            <li>Hospital público municipal veterinario.</li>
-            <li>Transporte con información en tiempo real.</li>
-            <li>Polideportivo de alto rendimiento para Corrientes.</li>
-            <li>Talleres y programas educativos según demanda.</li>
-          </ul>
-          <p class="muted">Nuestras propuestas tienen la autoria de nuestro equipo tecnico , prohibida su copia .</p>
-        </section>
-
-        <section class="card">
-          <h3>Contacto oficial</h3>
-          <p><strong>Dirección:</strong> Corrientes, Corrientes 3400</p>
-          <p><strong>Teléfono:</strong> +54 3794047894</p>
-          <p><strong>Email:</strong> <a href="mailto:grise.rios@gmail.com">grise.rios@gmail.com</a></p>
-          <p class="muted">Datos coinciden con la Biblioteca de Anuncios de Meta.</p>
-        </section>
-
-        <section class="card">
-          <h3>Redes</h3>
-          <p><a href="https://www.facebook.com/griselda.rios.18041/" target="_blank" rel="noopener">Facebook</a></p>
-          <p><a href="https://www.instagram.com/griseldarios.oficial" target="_blank" rel="noopener">Instagram</a></p>
-          <p class="muted">Seguí las novedades por los perfiles oficiales.</p>
-        </section>
-      </div>
-    </main>
-
-    <footer>
-      <p>Pagado por <strong>Griselda Ríos</strong>. Campaña a Intendente – Ciudad de Corrientes.</p>
-      <p>© 2025 – Sitio oficial de campaña.</p>
-    </footer>
+  <!-- CARTEL DE LLAMADO A LA ACCIÓN -->
+  <div class="cta-banner">
+    <p>📢 Conocé todas mis <strong>propuestas de campaña</strong> en mis perfiles:</p>
+    <div class="arrow-down">⬇️</div>
+    <div class="cta-buttons">
+      <a href="https://www.instagram.com/griseldarios.oficial" target="_blank" rel="noopener" class="btn-cta instagram">📸 Instagram</a>
+      <a href="https://www.facebook.com/griselda.rios.18041/" target="_blank" rel="noopener" class="btn-cta facebook">📘 Facebook</a>
+    </div>
   </div>
+
+  <!-- GALERÍA -->
+  <div class="gallery">
+    <img src="img/foto griselda.jpg" alt="Sueño una Corrientes en LIBERTAD" />
+    <img src="img/foto griselda.jpg" alt="Sueño una Corrientes en LIBERTAD" />
+  </div>
+
 </body>
 </html>
